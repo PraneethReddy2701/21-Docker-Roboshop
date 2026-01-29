@@ -12,6 +12,8 @@ fi
 # making it as available in environment
 export MYSQL_ROOT_PASSWORD=$PASSWORD
 
+rm -rf /tmp/mysql_root_password.txt
+
 exec /entrypoint.sh mysqld
 
 
